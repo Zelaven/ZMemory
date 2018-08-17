@@ -10,10 +10,11 @@ cd ..
 # Bundle everything that isn't:
 #  .sh  : a shell script.
 thin_arg=$1
+version=$(cat ../version.txt)
 if [[ $thin_arg == "thin" ]]; then
-  7za a -tzip ../ZMemory_thin.pk3 -r -x\!*.sh -x\!acs/.gitignore -xr\!acs_source
+  7za a -tzip ../ZMemory_v$version\_thin.pk3 -r -x\!*.sh -x\!acs/.gitignore -xr\!acs_source
 else
-  7za a -tzip ../ZMemory.pk3 -r -x\!*.sh -x\!acs/.gitignore
+  7za a -tzip ../ZMemory$version.pk3 -r -x\!*.sh -x\!acs/.gitignore
 fi
 
 
