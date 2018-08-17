@@ -14,7 +14,7 @@ version=$(cat ../version.txt)
 if [[ $thin_arg == "thin" ]]; then
   7za a -tzip ../ZMemory_v$version\_thin.pk3 -r -x\!*.sh -x\!acs/.gitignore -xr\!acs_source
 else
-  7za a -tzip ../ZMemory$version.pk3 -r -x\!*.sh -x\!acs/.gitignore
+  7za a -tzip ../ZMemory_v$version.pk3 -r -x\!*.sh -x\!acs/.gitignore
 fi
 
 
