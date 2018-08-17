@@ -1,0 +1,18 @@
+#library "ZMEMORY"
+#include "zcommon.acs"
+
+//Simple linked list implementation of malloc
+
+//Memory space
+global int 63:memory[];
+
+//NULL "pointer"
+#libdefine nullptr 0
+
+//Allocated size bytes in the memory space
+function int malloc (int size) {return 0;}
+
+//Frees an allocated block in the memory space.
+//There are no safeguards in this function to guess whether or not the free is 
+// valid, so be careful.
+function int free (int p_ptr) {return 0;}
