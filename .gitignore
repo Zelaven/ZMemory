@@ -1,0 +1,19 @@
+# Compiled ACS files
+*.o
+# ACS error files
+acs.err
+
+# Build files
+*.pk3
+
+# Backups files
+*.bak*
+*.bac*
+
+# Doom builder configuration files
+*.dbs
+
+# Temporary files
+*.tmp
+
+
